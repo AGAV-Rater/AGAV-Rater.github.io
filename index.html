@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="A LMM-based quality assessment model for AI-generated audio-visual content.">
+  <meta name="keywords" content="AGAV-Rater, audio-visual, quality assessment">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>AGAV-Rater: Adapting LMM for AI-Generated Audio-Visual Quality Assessment</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -24,7 +24,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -32,7 +32,8 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- 左上角图标 -->
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,7 +43,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -80,7 +81,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -88,8 +89,13 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-2 publication-title">AGAV-Rater: Enhancing LMM for <br> AI-Generated Audio-Visual Quality Assessment</h1>
           <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Temporarily Anonymized for Submission
+            </span>
+          </div>
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -109,17 +115,17 @@
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
             </span>
-          </div>
+          </div> -->
 
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Washington,</span>
             <span class="author-block"><sup>2</sup>Google Research</span>
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/pdf/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -127,8 +133,8 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
-              <span class="link-block">
+              </span> -->
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -136,9 +142,17 @@
                   </span>
                   <span>arXiv</span>
                 </a>
+              </span> -->
+              <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (Coming soon)</span>
+                </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -146,35 +160,59 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                </a>
+              </span> -->
             </div>
-
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop" style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="hero-body" style="flex: 1; padding: 10px;">
+      <img src="./static/images/AGAVQA1.png" alt="Teaser Image" style="width: 100%; height: auto; display: block;margin: 0 auto;">
+    </div>
+    <div class="hero-body" style="flex: 1; padding: 10px;">
+      <img src="./static/images/first.png" alt="Teaser Image" style="width: 85%; height: auto; display: block;margin: 0 auto;">
+    </div>
+  </div>
+</section> -->
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- 替换视频为图片 -->
+      <img src="./static/images/AGAVQA2.png" alt="Teaser Image" style="width: 90%; height: auto; display: block;margin: 0 auto;">
+      <h2 class="subtitle" style="text-align: left;max-width: 150%;font-size: 18px;">
+        We propose <span style="font-weight: bold;">AGAV-Rater</span>, a LMM-based model that can score AI-generated audio-visual content (AIGAV) across multiple dimensions, 
+        including audio quality, content consistency, and overall quality, as well as select the optimal AIGAV. 
+        It also evaluates audio and music generated from text on audio quality and content consistency. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -189,10 +227,10 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
 
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -247,50 +285,33 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" style="max-width: 1000px;">
+  <!-- <div class="container is-max-desktop"> -->
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+          <p>Many video-to-audio (VTA) methods have been proposed for dubbing silent AI-generated videos. 
+            An efficient quality assessment method for AI-generated audio-visual content (AIGAV) is crucial for ensuring audio-visual quality. 
+            Existing audio-visual quality assessment methods struggle with unique distortions in AIGAVs, such as unrealistic and inconsistent elements. 
           </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p>
+          In this paper, we introduce <i>AGAVQA</i>, the first large-scale AIGAV quality assessment dataset, comprising 3,392 AIGAVs from 16 VTA methods. 
+          AGAVQA includes two subsets: AGAVQA-MOS, which provides multi-dimensional scores for audio quality, content consistency, and overall quality, and AGAVQA-Pair, designed for optimal AGAV pair selection. 
+          We propose <i>AGAV-Rater</i>, a LMM-based model that can score AIGAVs, audio and music generated from text across multiple dimensions and selects the best AGAV generated by VTA methods to present to the user. 
+          AGAV-Rater achieves state-of-the-art performance on AGAVQA, Text-to-Audio, and Text-to-Music datasets. 
+          Subjective tests confirm that AGAV-Rater enhances VTA performance and user experience.
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -298,7 +319,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -306,142 +327,854 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">AGAVQA Dataset </h2>
+        <img src="./static/images/AGAVQA.png" alt="Teaser Image" style="width: 100%; height: auto; display: block;margin: 0 auto;">
+        <div class="content has-text-justified">
+          We construct the first AI-generated audio-visual quality assessment dataset, AGAVQA, which can be divided into two subsets: AGAVQA-MOS and AGAVQA-Pair. 
+          AGAVQA-MOS contains 3-dimensional Mean Opinion Scores (MOSs) for 3,088 AI-generated audio-visual samples. 
+          AGAVQA-Pair includes 75 question-answer pairs, asking which AI-generated audio-visual sample is the best.
+        </div>
+        <img src="./static/images/VTA.png" alt="Teaser Image" style="width: 50%; height: auto; display: block;margin: 0 auto;">
+        <div class="content has-text-justified">
+          AGAVQA contains 3,392 AI-generated audio-visual samples generated by 16 video-to-audio methods. 
+          The AGAVQA-MOS and AGAVQA-Pair subset each utilize 8 video-to-audio methods.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
-
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+          <h2 class="title is-4">Samples in the AGAVQA-MOS Subset</h2>
+          <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <video id="dollyzoom" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/VBkeling_6_elevenlabs.mp4" type="video/mp4">
+              </video>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio Quality: 81.33</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio-visual Content Consistency: 75.47</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Overall Audio-visual Quality: 81.22</p>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <video id="dollyzoom3" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/keling_world-1_SVA.mp4" type="video/mp4">
+              </video>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio Quality: 73.31</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio-visual Content Consistency: 59.18</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Overall Audio-visual Quality: 69.78</p>
+            </div>
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <video id="dollyzoom2" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/sora_84_SVA.mp4" type="video/mp4">
+              </video>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio Quality: 56.59</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio-visual Content Consistency: 53.38</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Overall Audio-visual Quality: 62.00</p>
+            </div>
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <video id="dollyzoom3" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/VBkeling_3_elevenlabs.mp4" type="video/mp4">
+              </video>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio Quality: 73.03</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio-visual Content Consistency: 56.54</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Overall Audio-visual Quality: 55.78</p>
+            </div>
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <video id="dollyzoom3" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/pika_186_foleycrafter.mp4" type="video/mp4">
+              </video>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio Quality: 56.83</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio-visual Content Consistency: 65.74</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Overall Audio-visual Quality: 52.20</p>
+            </div>
 
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <video id="dollyzoom3" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/pika_173_im2wav.mp4" type="video/mp4">
+              </video>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio Quality: 34.85</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Audio-visual Content Consistency: 34.20</p>
+              <p style="text-align: left;font-size: 0.8rem;margin-bottom: 1px;">Overall Audio-visual Quality: 35.73</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-    <!--/ Animation. -->
+  </div>
+</section>
 
-
-    <!-- Concurrent Work. -->
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-4">Samples in the AGAVQA-Pair Subset</h2>
+          <p style="text-align: left; margin-bottom: 1px;"><i>Question:</i> Which audio best matches this video in terms of audio content, quality and rhythm?</p>
+          <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <p style="text-align: left;margin-bottom: 1px;">Audio 1</p>
+              <video id="dollyzoom" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/3Q56DpBv5gE_difffoley.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <p style="text-align: left;margin-bottom: 1px;">Audio 2</p>
+              <video id="dollyzoom3" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/3Q56DpBv5gE_SonicVisionLM.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <p style="text-align: left;margin-bottom: 1px;">Audio 3</p>
+              <video id="dollyzoom2" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/3Q56DpBv5gE_specvqgan2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <p style="text-align: left; "><i>Answer:</i> Audio 2.</p>
+          <p style="text-align: left; margin-bottom: 1px;"><i>Question:</i> Which audio best matches this video in terms of audio content, quality and rhythm?</p>
+          <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <p style="text-align: left;margin-bottom: 1px;">Audio 1</p>
+              <video id="dollyzoom" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/ice_maskvat.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <p style="text-align: left;margin-bottom: 1px;">Audio 2</p>
+              <video id="dollyzoom3" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/ice_dfoley.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="width: 30%; margin: 10px; text-align: center;">
+              <p style="text-align: left;margin-bottom: 1px;">Audio 3</p>
+              <video id="dollyzoom2" controls muted loop playsinline style="height: 150px;">
+                <source src="./static/videos/ice_v2a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <p style="text-align: left; margin-bottom: 1px;"><i>Answer:</i> Audio 1.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">AGAV-Rater Overview</h2>
+        <img src="./static/images/AGAV-Rater.png" alt="Teaser Image" style="width: 80%; height: auto; display: block;margin: 0 auto;">
         <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+          We propose a LMM-based AI-generated audio-visual quality assessment model AGAV-Rater. 
+          AGAV-Rater can predict multi-dimensional scores for AI-generated audio-visual content (AIGAV), text-to-audio, and text-to-music, 
+          and assist video-to-audio methods in selecting the optimal AIGAV samples. 
+          Taking audio-visual input as an example, the video is first converted into a 1fps image sequence. 
+          Then, the image sequence and audio signal are separately encoded by the video encoder and audio encoder. 
+          After encoding, they are projected into the same vector space through the video projection and audio projection, 
+          and input into the large language model together with text embedding. 
+          Finally, we directly regress the LMM's last hidden states to output multi-dimensional numerical scores.
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
+  </div>
+</section>
 
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" style="max-width: 1000px;">
+  <h2 id="tablecontents" style="text-align: left;">Table of Contents</h2>
+  <div>
+      <li><a href="#Mdimensional" class="btn border-white bg-white fw-bold">Performance Comparisons of Multi-dimensional Scoring</a></li>
+      <li><a href="#Accuracy" class="btn border-white bg-white fw-bold">Accuracy Comparisons of Optimal AIGAV Selection</a></li>
+      <li><a href="#VTA" class="btn border-white bg-white fw-bold">Presentation of Optimal AIGAV Selected by AGAV-Rater</a></li>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Performance Comparisons of Multi-dimensional Scoring<a id="Mdimensional" /></h2>
+        <p style="margin-bottom: 2px;">Performance comparisons on the AGAVQA-MOS subset from three dimensions.</p>
+        <img src="./static/images/table1.png" alt="Teaser Image" style="width: 100%; height: auto; display: block;margin: 0 auto;">
+        <p style="text-align: left; margin-bottom: 10px;"></p>
+        <p style="margin-bottom: 2px;">Performance comparisons on the Text-to-Audio and Text-to-Music datasets from three dimensions.</p>
+        <img src="./static/images/table2.png" alt="Teaser Image" style="width: 100%; height: auto; display: block;margin: 0 auto;">
+        <p style="text-align: left; margin-bottom: 10px;"></p>
+        <p style="text-align: left;">
+          AGAV-Rater demonstrates the best performance across all three datasets. 
+          Especially in evaluating the content consistency dimension, the SRCC metric shows an <span style="font-weight: bold;">11%</span>, <span style="font-weight: bold;">7%</span>, and <span style="font-weight: bold;">3%</span> improvement 
+          in the AGAVQA-MOS, Text-to-Audio, and Text-to-Music datasets, respectively.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Accuracy Comparisons of Optimal AIGAV Selection<a id="Accuracy" /></h2>
+        <p style="margin-bottom: 2px;">Accuracy Comparisons between AGAV-Rater and proprietary LMMs on the AGAV-Pair subset</p>
+        <img src="./static/images/first.png" alt="Teaser Image" style="width: 80%; height: auto; display: block;margin: 0 auto;">
+        <p style="text-align: left;">
+          We train AGAV-Rater on the AGAVQA-MOS subset and test on the unseen AGAVQA-Pair subset. 
+          AGAV-Rater achieves the highest accuracy across all 8 video-to-audio methods, demonstrating its generalization ability and robustness.
+        </p>
+        <p style="text-align: left;font-size: 0.8rem;">
+        Each dimension in the radar chart represents the answer accuracy with the correct answer corresponding to the current VTA method.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Presentation of Optimal AIGAV Selected by AGAV-Rater<a id="VTA" /></h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <p style="text-align: left; margin-bottom: 1px;">
+            We collect 230 silent AI-generated videos from T2V-CompBench and Sora. For each video, we generate 2 AIGAVs using Elevenlabs.
+            We then utilize AGAV-Rater to select the higher-quality AGAV. 
+            10 subjects are invited to watch and listen to 2 AGAVs. 
+            <span style="font-weight: bold;">80%</span>  of them preferred the AIGAVs selected by AGAV-Rater for its better quality.
+            Here, we display some AGAVs judged by AGAV-Rater.
+          </p>
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top: 7vh;">
+              <span style="font-weight: bold;">Fantasy</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <p style=" margin-bottom: 1px;">High Quality</p>
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0047_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Low Quality</p>
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0047_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <p style="margin-bottom: 1px;">High Quality</p>
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0030_KLing_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Low Quality</p>
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0030_KLing_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Instrument</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/4_sora_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/4_sora_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh; object-fit: cover;">
+                <source src="./static/pair/object_0083_Gen3_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh; object-fit: cover;">
+                <source src="./static/pair/object_0083_Gen3_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Water</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0022_Gen3_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0022_Gen3_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/consistent_0023_KLing_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/consistent_0023_KLing_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Animal</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0011_KLing_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0011_KLing_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0004_KLing_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0004_KLing_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Object</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/motion_0030_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/motion_0030_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/motion_0046_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/motion_0046_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">People</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/29_sora_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/29_sora_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0095_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0095_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div> 
+          
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Scenery</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;object-fit: cover;">
+                <source src="./static/pair/spatial_0037_Gen3_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;object-fit: cover;">
+                <source src="./static/pair/spatial_0037_Gen3_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;object-fit: cover;">
+                <source src="./static/pair/object_0034_Gen3_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;object-fit: cover;">
+                <source src="./static/pair/object_0034_Gen3_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div> 
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Vehicle</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/consistent_0007_KLing_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/consistent_0007_KLing_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/consistent_0016_Gen3_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/consistent_0016_Gen3_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Cooking</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/24_sora_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/24_sora_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0030_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0030_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Sea</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0019_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0019_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0082_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/action_0082_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Fire</span>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0039_dreamina_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/interaction_0039_dreamina_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;margin-left: 1px;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/spatial_0002_KLing_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 20%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/spatial_0002_KLing_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="width:90px; text-align: center; padding: 0; margin-top:4vh;">
+              <span style="font-weight: bold;">Sea<br>+<br>Animal</span>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style=" margin-bottom: 1px;">High Quality</p>
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/generative_0029_Gen3_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Low Quality</p>
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/generative_0029_Gen3_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 5%; text-align: center; padding: 0; margin-top: 4vh;margin-right:3px;margin-left: 3px;">
+              <span style="font-weight: bold;">Scenery<br>+<br>People</span>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style=" margin-bottom: 1px;">High Quality</p>
+              <video id="dollyzoom" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/5_sora_elevenlabs_h.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Low Quality</p>
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 20vw;height: 12vh;object-fit: cover;">
+                <source src="./static/pair/5_sora_elevenlabs_l.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <p style="text-align: left; margin-top: 20px;">
+            We also generate 5 AGAVs for 10 AIGC video using Elevenlabs and then use AGAV-Rater to rank them from highest to lowest quality.
+          </p>
+          <p style="text-align: center;">AGAV-Rater Ranking Results</p>
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0;">
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style=" margin-bottom: 1px;">Rank 1</p>
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/action_0018_KLing_elevenlabs_1_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Rank 2</p>
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/action_0018_KLing_elevenlabs_2_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Rank 3</p>
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/action_0018_KLing_elevenlabs_3_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Rank 4</p>
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/action_0018_KLing_elevenlabs_0_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <p style="margin-bottom: 1px;">Rank 5</p>
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/action_0018_KLing_elevenlabs_4_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/33_sora_elevenlabs_2_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/33_sora_elevenlabs_0_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/33_sora_elevenlabs_1_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/33_sora_elevenlabs_4_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/33_sora_elevenlabs_3_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/13_sora_elevenlabs_1_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/13_sora_elevenlabs_4_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/13_sora_elevenlabs_2_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/13_sora_elevenlabs_3_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/13_sora_elevenlabs_0_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+            
+
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/generative_0017_KLing_elevenlabs_3_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/generative_0017_KLing_elevenlabs_2_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/generative_0017_KLing_elevenlabs_1_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/generative_0017_KLing_elevenlabs_0_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/generative_0017_KLing_elevenlabs_4_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0007_dreamina_elevenlabs_2_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0007_dreamina_elevenlabs_3_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0007_dreamina_elevenlabs_1_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0007_dreamina_elevenlabs_0_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0007_dreamina_elevenlabs_4_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0091_dreamina_elevenlabs_4_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0091_dreamina_elevenlabs_0_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0091_dreamina_elevenlabs_3_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0091_dreamina_elevenlabs_1_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/interaction_0091_dreamina_elevenlabs_2_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0043_dreamina_elevenlabs_2_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0043_dreamina_elevenlabs_1_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0043_dreamina_elevenlabs_0_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0043_dreamina_elevenlabs_4_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0043_dreamina_elevenlabs_3_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0026_KLing_elevenlabs_1_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0026_KLing_elevenlabs_3_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0026_KLing_elevenlabs_0_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0026_KLing_elevenlabs_4_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0026_KLing_elevenlabs_2_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0083_dreamina_elevenlabs_2_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0083_dreamina_elevenlabs_4_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0083_dreamina_elevenlabs_3_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0083_dreamina_elevenlabs_0_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/motion_0083_dreamina_elevenlabs_1_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            
+            <!-- video -->
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/numeracy_0019_dreamina_elevenlabs_1_rank1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom3" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/numeracy_0019_dreamina_elevenlabs_4_rank2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/numeracy_0019_dreamina_elevenlabs_3_rank3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/numeracy_0019_dreamina_elevenlabs_0_rank4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="flex: 1 1 19%; text-align: center; padding: 0;">
+              <video id="dollyzoom2" controls muted loop playsinline style="width: 100%;">
+                <source src="./static/optimal/numeracy_0019_dreamina_elevenlabs_2_rank5.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -451,17 +1184,17 @@
   year      = {2021},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+      <!-- href="./static/v2a-mapper_paper.pdf" -->
+      <a class="icon-link" > 
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -472,13 +1205,10 @@
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            <br>
+            Source code is mainly borrowed from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> website.
+            
           </p>
         </div>
       </div>
